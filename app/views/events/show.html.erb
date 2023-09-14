@@ -13,8 +13,8 @@
             </div>
             <h1>
               <%= @event.title %>
-              <% if @event.only_woman %>
-              【女性限定】
+              <% if @event.only_woman? %>
+                【女性限定】
               <% end %>
             </h1>
             <% if logged_in? %>
